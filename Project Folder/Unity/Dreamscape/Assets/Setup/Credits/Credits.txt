@@ -1,0 +1,7 @@
+Shaders :
+PSX Shader by "dsoft20" (github)
+VHS Shader by "staffantan" (github)
+
+Fonts :
+Paskowy font by "barmee" (dafont)
+Pixellari font by "Zacchary Dempsey-Plante" (dafont)

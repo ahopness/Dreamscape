@@ -1,6 +1,0 @@
-[gd_scene format=2]
-
-[node name="Map_0" type="Spatial"]
-
-[node name="Camera" type="Camera" parent="."]
-current = true

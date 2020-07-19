@@ -1,0 +1,55 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[  ]
+_global_script_class_icons={
+
+}
+
+[application]
+
+config/name="Dreamscape"
+run/main_scene="res://Scenes/Debug/scn_testlab.tscn"
+boot_splash/image="res://Sprites/Misc/Black.png"
+boot_splash/fullsize=false
+boot_splash/use_filter=false
+boot_splash/bg_color=Color( 0, 0, 0, 1 )
+config/icon="res://Setup/Logo/Logo.png"
+
+[display]
+
+window/size/width=1280
+window/size/height=720
+window/size/resizable=false
+window/size/fullscreen=true
+window/size/test_width=1280
+window/size/test_height=720
+window/dpi/allow_hidpi=true
+window/stretch/mode="viewport"
+window/stretch/aspect="keep"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "notes_tab" )
+
+[rendering]
+
+quality/driver/driver_name="GLES2"
+quality/2d/use_pixel_snap=true
+vram_compression/import_etc=true
+vram_compression/import_etc2=false
+quality/directional_shadow/size=2048
+quality/directional_shadow/size.mobile=1024
+quality/shadow_atlas/size=2048
+quality/shadow_atlas/size.mobile=1024
+quality/shadows/filter_mode=0
+quality/filters/use_nearest_mipmap_filter=true
+environment/default_clear_color=Color( 0.301961, 0.301961, 0.301961, 1 )
+quality/depth/hdr=false

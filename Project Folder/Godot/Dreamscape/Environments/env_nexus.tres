@@ -1,0 +1,10 @@
+[gd_resource type="Environment" format=2]
+
+[resource]
+background_mode = 1
+ssao_radius = 0.1
+dof_blur_near_distance = 287.87
+glow_enabled = true
+glow_strength = 1.75
+adjustment_enabled = true
+adjustment_contrast = 1.89

@@ -1,0 +1,856 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Textures/map_testlab/tex_skybox.png" type="Texture" id=1]
+[ext_resource path="res://Objects/obj_player_default.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Textures/map_testlab/tex_degug.png" type="Texture" id=3]
+
+[sub_resource type="PlaneMesh" id=1]
+
+[sub_resource type="SpatialMaterial" id=2]
+flags_vertex_lighting = true
+params_diffuse_mode = 1
+params_specular_mode = 4
+params_cull_mode = 2
+albedo_texture = ExtResource( 3 )
+metallic_specular = 0.0
+
+[sub_resource type="PanoramaSky" id=3]
+radiance_size = 0
+panorama = ExtResource( 1 )
+
+[sub_resource type="Environment" id=4]
+background_mode = 2
+background_sky = SubResource( 3 )
+background_color = Color( 0.815686, 0.815686, 0.67451, 1 )
+ambient_light_energy = 1.3
+tonemap_mode = 2
+tonemap_white = 1.61
+ssao_enabled = true
+
+[node name="scn_testlab" type="Spatial"]
+
+[node name="Map" type="Node" parent="."]
+
+[node name="Plataform" type="Spatial" parent="Map"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.621193 )
+
+[node name="CSGMesh" type="CSGMesh" parent="Map/Plataform"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, 0, 0, 0 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh2" type="CSGMesh" parent="Map/Plataform"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, 0, 0, -5 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh3" type="CSGMesh" parent="Map/Plataform"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -5, 0, -5 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh4" type="CSGMesh" parent="Map/Plataform"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -5, 0, 0 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh5" type="CSGMesh" parent="Map/Plataform"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, 10, 0, 0 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh6" type="CSGMesh" parent="Map/Plataform"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, 10, 0, -5 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh7" type="CSGMesh" parent="Map/Plataform"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, 5, 0, -5 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh8" type="CSGMesh" parent="Map/Plataform"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, 5, 0, 0 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh9" type="CSGMesh" parent="Map/Plataform"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, 0, 0, 10 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh10" type="CSGMesh" parent="Map/Plataform"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, 0, 0, 5 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh11" type="CSGMesh" parent="Map/Plataform"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -5, 0, 5 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh12" type="CSGMesh" parent="Map/Plataform"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -5, 0, 10 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh13" type="CSGMesh" parent="Map/Plataform"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, 10, 0, 10 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh14" type="CSGMesh" parent="Map/Plataform"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, 10, 0, 5 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh15" type="CSGMesh" parent="Map/Plataform"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, 5, 0, 5 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh16" type="CSGMesh" parent="Map/Plataform"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, 5, 0, 10 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh17" type="CSGMesh" parent="Map/Plataform"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -20, 0, 0 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh18" type="CSGMesh" parent="Map/Plataform"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -20, 0, -5 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh19" type="CSGMesh" parent="Map/Plataform"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -25, 0, -5 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh20" type="CSGMesh" parent="Map/Plataform"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -25, 0, 0 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh21" type="CSGMesh" parent="Map/Plataform"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -10, 0, 0 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh22" type="CSGMesh" parent="Map/Plataform"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -10, 0, -5 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh23" type="CSGMesh" parent="Map/Plataform"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -15, 0, -5 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh24" type="CSGMesh" parent="Map/Plataform"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -15, 0, 0 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh25" type="CSGMesh" parent="Map/Plataform"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -20, 0, 10 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh26" type="CSGMesh" parent="Map/Plataform"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -20, 0, 5 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh27" type="CSGMesh" parent="Map/Plataform"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -25, 0, 5 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh28" type="CSGMesh" parent="Map/Plataform"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -25, 0, 10 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh29" type="CSGMesh" parent="Map/Plataform"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -10, 0, 10 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh30" type="CSGMesh" parent="Map/Plataform"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -10, 0, 5 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh31" type="CSGMesh" parent="Map/Plataform"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -15, 0, 5 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh32" type="CSGMesh" parent="Map/Plataform"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -15, 0, 10 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh33" type="CSGMesh" parent="Map/Plataform"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, 0, 0, -20 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh34" type="CSGMesh" parent="Map/Plataform"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, 0, 0, -25 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh35" type="CSGMesh" parent="Map/Plataform"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -5, 0, -25 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh36" type="CSGMesh" parent="Map/Plataform"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -5, 0, -20 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh37" type="CSGMesh" parent="Map/Plataform"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, 10, 0, -20 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh38" type="CSGMesh" parent="Map/Plataform"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, 10, 0, -25 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh39" type="CSGMesh" parent="Map/Plataform"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, 5, 0, -25 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh40" type="CSGMesh" parent="Map/Plataform"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, 5, 0, -20 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh41" type="CSGMesh" parent="Map/Plataform"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, 0, 0, -10 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh42" type="CSGMesh" parent="Map/Plataform"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, 0, 0, -15 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh43" type="CSGMesh" parent="Map/Plataform"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -5, 0, -15 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh44" type="CSGMesh" parent="Map/Plataform"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -5, 0, -10 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh45" type="CSGMesh" parent="Map/Plataform"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, 10, 0, -10 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh46" type="CSGMesh" parent="Map/Plataform"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, 10, 0, -15 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh47" type="CSGMesh" parent="Map/Plataform"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, 5, 0, -15 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh48" type="CSGMesh" parent="Map/Plataform"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, 5, 0, -10 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh49" type="CSGMesh" parent="Map/Plataform"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -20, 0, -20 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh50" type="CSGMesh" parent="Map/Plataform"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -20, 0, -25 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh51" type="CSGMesh" parent="Map/Plataform"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -25, 0, -25 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh52" type="CSGMesh" parent="Map/Plataform"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -25, 0, -20 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh53" type="CSGMesh" parent="Map/Plataform"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -10, 0, -20 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh54" type="CSGMesh" parent="Map/Plataform"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -10, 0, -25 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh55" type="CSGMesh" parent="Map/Plataform"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -15, 0, -25 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh56" type="CSGMesh" parent="Map/Plataform"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -15, 0, -20 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh57" type="CSGMesh" parent="Map/Plataform"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -20, 0, -10 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh58" type="CSGMesh" parent="Map/Plataform"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -20, 0, -15 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh59" type="CSGMesh" parent="Map/Plataform"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -25, 0, -15 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh60" type="CSGMesh" parent="Map/Plataform"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -25, 0, -10 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh61" type="CSGMesh" parent="Map/Plataform"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -10, 0, -10 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh62" type="CSGMesh" parent="Map/Plataform"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -10, 0, -15 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh63" type="CSGMesh" parent="Map/Plataform"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -15, 0, -15 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh64" type="CSGMesh" parent="Map/Plataform"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -15, 0, -10 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="Plataform2" type="Spatial" parent="Map"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, -53 )
+
+[node name="CSGMesh" type="CSGMesh" parent="Map/Plataform2"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, 0, 0, 0 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh2" type="CSGMesh" parent="Map/Plataform2"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, 0, 0, -5 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh3" type="CSGMesh" parent="Map/Plataform2"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -5, 0, -5 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh4" type="CSGMesh" parent="Map/Plataform2"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -5, 0, 0 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh5" type="CSGMesh" parent="Map/Plataform2"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, 10, 0, 0 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh6" type="CSGMesh" parent="Map/Plataform2"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, 10, 0, -5 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh7" type="CSGMesh" parent="Map/Plataform2"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, 5, 0, -5 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh8" type="CSGMesh" parent="Map/Plataform2"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, 5, 0, 0 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh9" type="CSGMesh" parent="Map/Plataform2"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, 0, 0, 10 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh10" type="CSGMesh" parent="Map/Plataform2"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, 0, 0, 5 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh11" type="CSGMesh" parent="Map/Plataform2"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -5, 0, 5 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh12" type="CSGMesh" parent="Map/Plataform2"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -5, 0, 10 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh13" type="CSGMesh" parent="Map/Plataform2"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, 10, 0, 10 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh14" type="CSGMesh" parent="Map/Plataform2"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, 10, 0, 5 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh15" type="CSGMesh" parent="Map/Plataform2"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, 5, 0, 5 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh16" type="CSGMesh" parent="Map/Plataform2"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, 5, 0, 10 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh17" type="CSGMesh" parent="Map/Plataform2"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -20, 0, 0 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh18" type="CSGMesh" parent="Map/Plataform2"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -20, 0, -5 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh19" type="CSGMesh" parent="Map/Plataform2"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -25, 0, -5 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh20" type="CSGMesh" parent="Map/Plataform2"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -25, 0, 0 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh21" type="CSGMesh" parent="Map/Plataform2"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -10, 0, 0 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh22" type="CSGMesh" parent="Map/Plataform2"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -10, 0, -5 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh23" type="CSGMesh" parent="Map/Plataform2"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -15, 0, -5 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh24" type="CSGMesh" parent="Map/Plataform2"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -15, 0, 0 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh25" type="CSGMesh" parent="Map/Plataform2"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -20, 0, 10 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh26" type="CSGMesh" parent="Map/Plataform2"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -20, 0, 5 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh27" type="CSGMesh" parent="Map/Plataform2"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -25, 0, 5 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh28" type="CSGMesh" parent="Map/Plataform2"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -25, 0, 10 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh29" type="CSGMesh" parent="Map/Plataform2"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -10, 0, 10 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh30" type="CSGMesh" parent="Map/Plataform2"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -10, 0, 5 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh31" type="CSGMesh" parent="Map/Plataform2"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -15, 0, 5 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh32" type="CSGMesh" parent="Map/Plataform2"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -15, 0, 10 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh33" type="CSGMesh" parent="Map/Plataform2"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, 0, 0, -20 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh34" type="CSGMesh" parent="Map/Plataform2"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, 0, 0, -25 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh35" type="CSGMesh" parent="Map/Plataform2"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -5, 0, -25 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh36" type="CSGMesh" parent="Map/Plataform2"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -5, 0, -20 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh37" type="CSGMesh" parent="Map/Plataform2"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, 10, 0, -20 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh38" type="CSGMesh" parent="Map/Plataform2"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, 10, 0, -25 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh39" type="CSGMesh" parent="Map/Plataform2"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, 5, 0, -25 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh40" type="CSGMesh" parent="Map/Plataform2"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, 5, 0, -20 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh41" type="CSGMesh" parent="Map/Plataform2"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, 0, 0, -10 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh42" type="CSGMesh" parent="Map/Plataform2"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, 0, 0, -15 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh43" type="CSGMesh" parent="Map/Plataform2"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -5, 0, -15 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh44" type="CSGMesh" parent="Map/Plataform2"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -5, 0, -10 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh45" type="CSGMesh" parent="Map/Plataform2"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, 10, 0, -10 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh46" type="CSGMesh" parent="Map/Plataform2"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, 10, 0, -15 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh47" type="CSGMesh" parent="Map/Plataform2"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, 5, 0, -15 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh48" type="CSGMesh" parent="Map/Plataform2"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, 5, 0, -10 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh49" type="CSGMesh" parent="Map/Plataform2"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -20, 0, -20 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh50" type="CSGMesh" parent="Map/Plataform2"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -20, 0, -25 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh51" type="CSGMesh" parent="Map/Plataform2"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -25, 0, -25 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh52" type="CSGMesh" parent="Map/Plataform2"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -25, 0, -20 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh53" type="CSGMesh" parent="Map/Plataform2"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -10, 0, -20 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh54" type="CSGMesh" parent="Map/Plataform2"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -10, 0, -25 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh55" type="CSGMesh" parent="Map/Plataform2"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -15, 0, -25 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh56" type="CSGMesh" parent="Map/Plataform2"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -15, 0, -20 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh57" type="CSGMesh" parent="Map/Plataform2"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -20, 0, -10 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh58" type="CSGMesh" parent="Map/Plataform2"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -20, 0, -15 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh59" type="CSGMesh" parent="Map/Plataform2"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -25, 0, -15 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh60" type="CSGMesh" parent="Map/Plataform2"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -25, 0, -10 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh61" type="CSGMesh" parent="Map/Plataform2"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -10, 0, -10 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh62" type="CSGMesh" parent="Map/Plataform2"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -10, 0, -15 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh63" type="CSGMesh" parent="Map/Plataform2"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -15, 0, -15 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh64" type="CSGMesh" parent="Map/Plataform2"]
+transform = Transform( 2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, -15, 0, -10 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="Ramp" type="Spatial" parent="Map"]
+
+[node name="CSGMesh65" type="CSGMesh" parent="Map/Ramp"]
+transform = Transform( 2.5, 0, 0, 0, 0.965926, -0.647048, 0, 0.258819, 2.41481, 0, 0.705905, -29.1704 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh66" type="CSGMesh" parent="Map/Ramp"]
+transform = Transform( 2.5, 0, 0, 0, 0.691211, -1.80663, 0, 0.722654, 1.72802, 0, 2, -34 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh67" type="CSGMesh" parent="Map/Ramp"]
+transform = Transform( 2.5, 0, 0, 0, 0.965926, -0.647048, 0, 0.258819, 2.41481, -5, 2, -34 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh68" type="CSGMesh" parent="Map/Ramp"]
+transform = Transform( 2.5, 0, 0, 0, 0.965926, -0.647048, 0, 0.258819, 2.41481, -5, 0.705905, -29.1704 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh69" type="CSGMesh" parent="Map/Ramp"]
+transform = Transform( 2.5, 0, 0, 0, 0.965926, -0.647048, 0, 0.258819, 2.41481, 0, 3.2941, -38.8296 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh70" type="CSGMesh" parent="Map/Ramp"]
+transform = Transform( 2.5, 0, 0, 0, 0.965926, -0.647048, 0, 0.258819, 2.41481, -5, 3.2941, -38.8296 )
+use_collision = true
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="Collisions" type="Node" parent="."]
+
+[node name="Interactions" type="Node" parent="."]
+
+[node name="Player" type="Node" parent="."]
+
+[node name="env_testlab" type="WorldEnvironment" parent="Player"]
+environment = SubResource( 4 )
+
+[node name="obj_player" parent="Player" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.730845, 3 )

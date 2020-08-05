@@ -1,0 +1,22 @@
+A Game By :
+Lucas Ângelo (@ahopness)
+
+Acknowledgements :
+godot-console by "quentincaffeino" (github)
+GodotDitheringShader by "griffinjennings" (github)
+godot-psx-shaders by "marmitoTH" (github)
+Godot-3D-text-plugin by "SIsilicon" (github)
+
+Fonts :
+Paskowy font by "barmee" (dafont)
+Pixellari font by "Zacchary Dempsey-Plante" (dafont)
+
+Powered by :
+Godot
+Blender
+Paint.net
+Audacity
+LMMS
+KDEnlive
+Trello
+Github

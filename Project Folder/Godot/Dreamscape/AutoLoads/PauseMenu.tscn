@@ -1,0 +1,831 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Setup/Fonts/font_pixellari.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Scripts/AutoLoads/PauseMenu.gd" type="Script" id=2]
+
+[sub_resource type="Animation" id=1]
+resource_name = "anm_config-main"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath("Pointers/txt_pointer:modulate")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("pg_config/pg_1/txt_res:modulate")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("pg_config/pg_1/txt_res:rect_position")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 218, 80 ), Vector2( 218, 106 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Pointers/txt_pointer2:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Pointers/txt_pointer3:modulate")
+tracks/4/interp = 2
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Pointers/txt_pointer4:modulate")
+tracks/5/interp = 2
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("pg_config/pg_1/txt_graphics:modulate")
+tracks/6/interp = 2
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("pg_config/pg_1/txt_graphics:rect_position")
+tracks/7/interp = 2
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 106, 136 ), Vector2( 136, 136 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("pg_config/pg_1/txt_volume:modulate")
+tracks/8/interp = 2
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("pg_config/pg_1/txt_volume:rect_position")
+tracks/9/interp = 2
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 347, 137 ), Vector2( 317, 137 ) ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("pg_config/pg_1/txt_goback:modulate")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("pg_config/pg_1/txt_goback:rect_position")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 232, 211 ), Vector2( 232, 181 ) ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "anm_exit"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath("Pointers/txt_pointer2:modulate")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Pointers/txt_pointer3:modulate")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Pointers/txt_pointer3:rect_position")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 200, 136.2 ), Vector2( 130, 136.2 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Pointers/txt_pointer2:rect_position")
+tracks/3/interp = 2
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 305, 136 ), Vector2( 375, 136 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("pg_exit/Options/txt_yes:modulate")
+tracks/4/interp = 2
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("pg_exit/Options/txt_no:modulate")
+tracks/5/interp = 2
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("pg_exit/Options/txt_no:rect_position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 420, 136 ), Vector2( 390, 136 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("pg_exit/Options/txt_yes:rect_position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 69, 136 ), Vector2( 99, 136 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("pg_exit/Atention:modulate")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("pg_exit/Atention:rect_position")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0.2 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=3]
+length = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath("pg_main/Options/txt_resume:modulate")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("pg_main/Options/txt_configs:modulate")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("pg_main/Options/txt_exit:modulate")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("pg_main/Options/txt_exit:rect_position")
+tracks/3/interp = 2
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 215, 211 ), Vector2( 215, 181 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("pg_main/Options/txt_configs:rect_position")
+tracks/4/interp = 2
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 350, 138 ), Vector2( 320, 138 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("pg_main/Options/txt_resume:rect_position")
+tracks/5/interp = 2
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 112, 136 ), Vector2( 142, 136 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Pointers/txt_pointer2:modulate")
+tracks/6/interp = 2
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Pointers/txt_pointer3:modulate")
+tracks/7/interp = 2
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Pointers/txt_pointer4:modulate")
+tracks/8/interp = 2
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[node name="PauseMenu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="cr_bg" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 0.972
+margin_bottom = 8.064
+color = Color( 0, 0, 0, 0.607843 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="txt_paused" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -48.0
+margin_top = 48.0
+margin_right = 58.0
+margin_bottom = 64.0
+custom_fonts/font = ExtResource( 1 )
+text = "GAME PAUSED"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pointers" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="txt_pointer" type="Label" parent="Pointers"]
+modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.5
+anchor_top = 0.556
+anchor_right = 0.5
+anchor_bottom = 0.556
+margin_left = -4.99998
+margin_top = -32.128
+margin_right = 6.0
+margin_bottom = -16.128
+rect_rotation = -89.9999
+rect_scale = Vector2( 0.8, 0.8 )
+custom_fonts/font = ExtResource( 1 )
+text = ">"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="txt_key4" type="Label" parent="Pointers/txt_pointer"]
+anchor_left = 0.5
+anchor_top = 0.556
+anchor_right = 0.5
+anchor_bottom = 0.556
+margin_left = 18.1579
+margin_top = -10.3176
+margin_right = 30.1579
+margin_bottom = 24.6824
+rect_rotation = -270.0
+rect_scale = Vector2( 1.40793, 1.51166 )
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 1, 1, 1, 0.168627 )
+text = "W
+"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="txt_pointer2" type="Label" parent="Pointers"]
+anchor_left = 0.5
+anchor_top = 0.556
+anchor_right = 0.5
+anchor_bottom = 0.556
+margin_left = 49.0002
+margin_top = -24.128
+margin_right = 60.0002
+margin_bottom = -8.12802
+rect_scale = Vector2( 0.8, 0.8 )
+custom_fonts/font = ExtResource( 1 )
+text = ">"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="txt_key3" type="Label" parent="Pointers/txt_pointer2"]
+anchor_left = 0.5
+anchor_top = 0.556
+anchor_right = 0.5
+anchor_bottom = 0.556
+margin_left = -0.500183
+margin_top = -11.396
+margin_right = 10.4998
+margin_bottom = 23.604
+rect_rotation = -359.999
+rect_scale = Vector2( 1.40793, 1.51166 )
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 1, 1, 1, 0.168627 )
+text = "D
+"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="txt_pointer3" type="Label" parent="Pointers"]
+anchor_left = 0.5
+anchor_top = 0.556
+anchor_right = 0.5
+anchor_bottom = 0.556
+margin_left = -55.9998
+margin_top = -23.9281
+margin_right = -44.9998
+margin_bottom = -7.92807
+rect_rotation = -359.999
+rect_scale = Vector2( 0.8, 0.8 )
+custom_fonts/font = ExtResource( 1 )
+text = "<"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="txt_key2" type="Label" parent="Pointers/txt_pointer3"]
+anchor_left = 0.5
+anchor_top = 0.556
+anchor_right = 0.5
+anchor_bottom = 0.556
+margin_left = -16.7502
+margin_top = -12.8958
+margin_right = -6.75021
+margin_bottom = 22.1041
+rect_rotation = -359.999
+rect_scale = Vector2( 1.40793, 1.51166 )
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 1, 1, 1, 0.168627 )
+text = "A"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="txt_pointer4" type="Label" parent="Pointers"]
+anchor_left = 0.5
+anchor_top = 0.556
+anchor_right = 0.5
+anchor_bottom = 0.556
+margin_left = 6.00003
+margin_top = 5.87199
+margin_right = 17.0
+margin_bottom = 21.872
+rect_rotation = -270.0
+rect_scale = Vector2( 0.8, 0.8 )
+custom_fonts/font = ExtResource( 1 )
+text = ">"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="txt_key" type="Label" parent="Pointers/txt_pointer4"]
+anchor_left = 0.5
+anchor_top = 0.556
+anchor_right = 0.5
+anchor_bottom = 0.556
+margin_left = -0.31575
+margin_top = 5.0256
+margin_right = 9.68425
+margin_bottom = 40.0256
+rect_rotation = -449.999
+rect_scale = Vector2( 1.40793, 1.51166 )
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 1, 1, 1, 0.168627 )
+text = "s
+"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="pg_main" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Options" type="Control" parent="pg_main"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="txt_resume" type="Label" parent="pg_main/Options"]
+anchor_left = 0.039
+anchor_top = 0.077
+anchor_right = 0.039
+anchor_bottom = 0.077
+margin_left = 122.032
+margin_top = 113.824
+margin_right = 183.032
+margin_bottom = 129.824
+rect_scale = Vector2( 0.8, 0.8 )
+custom_fonts/font = ExtResource( 1 )
+text = "RESUME"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="txt_configs" type="Label" parent="pg_main/Options"]
+anchor_left = 0.039
+anchor_top = 0.077
+anchor_right = 0.039
+anchor_bottom = 0.077
+margin_left = 300.032
+margin_top = 115.824
+margin_right = 367.032
+margin_bottom = 131.824
+rect_scale = Vector2( 0.8, 0.8 )
+custom_fonts/font = ExtResource( 1 )
+text = "CONFIGS"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="txt_exit" type="Label" parent="pg_main/Options"]
+anchor_left = 0.039
+anchor_top = 0.077
+anchor_right = 0.039
+anchor_bottom = 0.077
+margin_left = 195.032
+margin_top = 158.824
+margin_right = 305.032
+margin_bottom = 174.824
+rect_scale = Vector2( 0.8, 0.8 )
+custom_fonts/font = ExtResource( 1 )
+text = "EXIT TO MENU"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="pg_config" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="pg_1" type="Control" parent="pg_config"]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="txt_res" type="Label" parent="pg_config/pg_1"]
+modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.039
+anchor_top = 0.077
+anchor_right = 0.039
+anchor_bottom = 0.077
+margin_left = 216.44
+margin_top = 76.92
+margin_right = 313.44
+margin_bottom = 92.92
+rect_scale = Vector2( 0.8, 0.8 )
+custom_fonts/font = ExtResource( 1 )
+text = "RESOLUTION"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="txt_graphics" type="Label" parent="pg_config/pg_1"]
+modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.039
+anchor_top = 0.077
+anchor_right = 0.039
+anchor_bottom = 0.077
+margin_left = 104.44
+margin_top = 132.92
+margin_right = 184.44
+margin_bottom = 148.92
+rect_scale = Vector2( 0.8, 0.8 )
+custom_fonts/font = ExtResource( 1 )
+text = "GRAPHICS "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="txt_volume" type="Label" parent="pg_config/pg_1"]
+modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.039
+anchor_top = 0.077
+anchor_right = 0.039
+anchor_bottom = 0.077
+margin_left = 345.44
+margin_top = 133.92
+margin_right = 407.44
+margin_bottom = 149.92
+rect_scale = Vector2( 0.8, 0.8 )
+custom_fonts/font = ExtResource( 1 )
+text = "VOLUME"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="txt_goback" type="Label" parent="pg_config/pg_1"]
+modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.039
+anchor_top = 0.077
+anchor_right = 0.039
+anchor_bottom = 0.077
+margin_left = 230.44
+margin_top = 207.92
+margin_right = 296.44
+margin_bottom = 223.92
+rect_scale = Vector2( 0.8, 0.8 )
+custom_fonts/font = ExtResource( 1 )
+text = "GO BACK"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="pg_2" type="Control" parent="pg_config"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="pg_exit" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Options" type="Control" parent="pg_exit"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="txt_yes" type="Label" parent="pg_exit/Options"]
+modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.5
+anchor_top = 0.556
+anchor_right = 0.5
+anchor_bottom = 0.556
+margin_left = -187.0
+margin_top = -24.128
+margin_right = -158.0
+margin_bottom = -8.12802
+rect_scale = Vector2( 0.8, 0.8 )
+custom_fonts/font = ExtResource( 1 )
+text = "YES"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="txt_no" type="Label" parent="pg_exit/Options"]
+modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.5
+anchor_top = 0.556
+anchor_right = 0.5
+anchor_bottom = 0.556
+margin_left = 164.0
+margin_top = -24.128
+margin_right = 186.0
+margin_bottom = -8.12802
+rect_scale = Vector2( 0.8, 0.8 )
+custom_fonts/font = ExtResource( 1 )
+text = "NO"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Atention" type="Control" parent="pg_exit"]
+modulate = Color( 1, 1, 1, 0 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="txt_atention" type="Label" parent="pg_exit/Atention"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -39.0
+margin_top = -56.0
+margin_right = 43.0
+margin_bottom = -40.0
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+text = "ATENTION!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="txt_atention2" type="Label" parent="pg_exit/Atention"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -103.0
+margin_top = -24.0
+margin_right = 161.0
+margin_bottom = 49.0
+rect_scale = Vector2( 0.8, 0.8 )
+custom_fonts/font = ExtResource( 1 )
+text = "IF YOU EXIT THE GAME NOW YOU WILL LOST YOUR PROGRESS OF THE DAY!
+"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="txt_atention3" type="Label" parent="pg_exit/Atention"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -104.0
+margin_top = 24.0
+margin_right = 160.0
+margin_bottom = 40.0
+rect_scale = Vector2( 0.8, 0.8 )
+custom_fonts/font = ExtResource( 1 )
+text = "YOU REALLY WANT TO EXIT?"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/anm_config-main = SubResource( 1 )
+anims/anm_exit = SubResource( 2 )
+anims/anm_main = SubResource( 3 )

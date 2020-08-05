@@ -1,0 +1,48 @@
+[Dreamscape]
+
+Maps :
+Nexus 
+  Museum 
+    Garden
+      The sewers
+        Night city
+        Neigborhood
+        Heart factory
+      The manitence room
+        The room of me
+    Star room
+      Field
+    The room of poeple
+      The room of ranging poeple
+ 
+  Neigborhood 
+    The Sewers
+      Night city
+      Garden
+      The place time forgot
+    Our house
+      Our bedroom
+        Night party
+    Igor's house
+      The play world
+ 
+  Night City 
+    The Sewers
+      Garden
+      School
+      Heart factory
+    The docs
+      The lighthouse
+    The bar
+      The monster area
+    The cinema
+      The Action world
+    The lighthouse
+      The underwater world
+ 
+  School 
+    Sports area
+      The bathroom
+    The Global world
+      The clouds
+    The seeling

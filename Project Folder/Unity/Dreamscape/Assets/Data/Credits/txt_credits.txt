@@ -1,0 +1,24 @@
+A game by :
+Ahopness (@real_the_lucas)
+
+Acknowledgments :
+Editor Enhancer by xeleh (github)
+Kino PostProcessing by Keijiro (github)
+JPEG/MP4 Compression by JanMalitschek (github)
+Yarn Spinner by SecretLab (github)
+Textures by textures.com (website)
+
+Fonts :
+Paskowy font by "barmee" (dafont)
+Pixellari font by "Zacchary Dempsey-Plante" (dafont)
+
+Softwares used :
+Unity
+Blender
+Paint.net
+Audacity
+LMMS
+Visual Studio
+KDEnlive
+Trello
+Github
